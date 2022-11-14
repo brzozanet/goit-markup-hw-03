@@ -10,13 +10,18 @@
 
 /* GLOBAL STYLES */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #e5e5e5;
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color-black);
 }
 
-.wrapper {
+.container {
   width: 1600px;
   margin: auto;
   background-color: var(--brand-color-white);
@@ -30,7 +35,11 @@ body {
 }
 
 .main {
-  margin: 94px 215px 0px 215px;
+  padding: 0 215px;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .footer {
@@ -77,6 +86,10 @@ body {
   margin-right: 46px;
 }
 
+.menu-item:last-child {
+  margin-right: 371px;
+}
+
 .menu-link {
   text-decoration: none;
   font-size: 14px;
@@ -95,12 +108,15 @@ body {
 .contact-list {
   float: left;
   margin-top: 32px;
-  margin-left: 268px;
 }
 
 .contact-item {
   display: inline;
   margin-right: 50px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
 }
 
 .contact-link {
@@ -119,14 +135,13 @@ body {
 /* SLOGAN */
 
 .slogan {
-  height: 600px;
+  min-height: 600px;
   background-color: var(--brand-background-dark);
-  border: 1px solid var(--brand-background-dark); /* I dont't know why this property is required */
-  text-align: center;
+  padding: 200px 452px 0;
 }
 
 .slogan-content {
-  margin: 200px 452px 0px 452px;
+  text-align: center;
 }
 
 .slogan-title {
@@ -136,6 +151,7 @@ body {
   font-weight: 900;
   line-height: 1.4em;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
 }
 
 .slogan-btn {
@@ -147,7 +163,7 @@ body {
   font-weight: 700;
   line-height: 1.9em;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   cursor: pointer;
 }
 
@@ -159,6 +175,10 @@ body {
 }
 
 /* ADVANTAGES */
+
+.advantages {
+  border: 1px solid red;
+}
 
 .advantages-item {
   display: inline;
@@ -178,8 +198,8 @@ body {
 /* OFFER */
 
 .offer {
-  margin-top: 94px;
   text-align: center;
+  border: 1px solid blue;
 }
 
 .offer-item {
@@ -189,19 +209,39 @@ body {
 /* TEAM */
 
 .team {
-  margin-top: 94px;
-  padding-top: 94px;
   text-align: center;
   background-color: #f5f4fa;
-  border: 1px solid #f5f4fa; /* I dont't know why this property is required */
 }
 
 .team-item {
   background-color: var(--brand-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  max-width: 270px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.team-item:last-child {
+  margin-right: 0;
 }
 
 .team-description-text {
   color: var(--brand-color-grey);
+  margin-bottom: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-description {
+  padding-top: 30px;
+}
+
+.team-description h3 {
+  margin-bottom: 10px;
 }
 
 /* SUBMENU */
@@ -217,7 +257,7 @@ body {
 
 .btn {
   background-color: #f5f4fa;
-  height: 38px;
+  min-height: 38px;
   padding: 0px 20px 0px 20px;
   font-size: 16px;
   font-weight: 500;
