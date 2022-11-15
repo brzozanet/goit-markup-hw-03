@@ -260,16 +260,22 @@ body {
 .submenu-list {
   margin: auto;
   width: 580px;
+  padding-bottom: 50px;
 }
 
 .submenu-item {
-  display: inline;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.submenu-item:last-child {
+  margin-right: 0;
 }
 
 .btn {
   background-color: #f5f4fa;
   min-height: 38px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -286,8 +292,24 @@ body {
 
 /* PROJECTS */
 
-.projects-description-text {
+.projects-item {
+  border: 1px solid #eee;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-description {
+  padding: 20px 24px;
+}
+
+.projects-description > h3 {
+  line-height: 2em;
+}
+
+.projects-description > p {
   color: var(--brand-color-grey);
+  line-height: 2em;
 }
 
 /* FOOTER */
@@ -296,11 +318,15 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
+}
+
+.nofloat {
   float: none;
 }
 
 .address-list {
   padding-left: 0px;
+  padding-top: 20px;
 }
 
 .address-item {
