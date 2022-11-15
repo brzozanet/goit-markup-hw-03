@@ -32,6 +32,8 @@ body {
   height: 80px;
   border-bottom: #ececec solid 1px;
   padding-left: 215px;
+  display: flex;
+  align-items: center;
 }
 
 .main {
@@ -65,9 +67,7 @@ body {
   font-size: 26px;
   color: #000;
   text-decoration: none;
-  margin-top: 24px;
   margin-right: 93px;
-  float: left;
 }
 
 .brand-color-blue {
@@ -77,17 +77,15 @@ body {
 /* NAVIGATION */
 
 .menu-list {
-  float: left;
-  margin-top: 32px;
 }
 
 .menu-item {
   display: inline;
-  margin-right: 46px;
+  padding-right: 46px;
 }
 
 .menu-item:last-child {
-  margin-right: 371px;
+  padding-right: 371px;
 }
 
 .menu-link {
@@ -106,17 +104,15 @@ body {
 /* CONTACT */
 
 .contact-list {
-  float: left;
-  margin-top: 32px;
 }
 
 .contact-item {
   display: inline;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 .contact-item:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .contact-link {
@@ -263,13 +259,13 @@ body {
   padding-bottom: 50px;
 }
 
-.submenu-item {
-  display: inline-block;
-  margin-right: 8px;
+.submenu-list > ul {
+  display: flex;
+  justify-content: space-around;
 }
 
-.submenu-item:last-child {
-  margin-right: 0;
+.submenu-item {
+  display: inline-block;
 }
 
 .btn {
@@ -292,11 +288,18 @@ body {
 
 /* PROJECTS */
 
+.projects-list {
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
 .projects-item {
   border: 1px solid #eee;
   display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .projects-description {
@@ -318,10 +321,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
-}
-
-.nofloat {
-  float: none;
 }
 
 .address-list {
