@@ -177,16 +177,23 @@ body {
 /* ADVANTAGES */
 
 .advantages {
-  border: 1px solid red;
+  padding-bottom: 0px;
 }
 
 .advantages-item {
-  display: inline;
+  max-width: 270px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.advantages-item:last-child {
+  margin-right: 0;
 }
 
 .advantages-title {
   font-size: 14px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
@@ -199,11 +206,15 @@ body {
 
 .offer {
   text-align: center;
-  border: 1px solid blue;
 }
 
 .offer-item {
-  display: inline;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.offer-item:last-child {
+  margin-right: 0;
 }
 
 /* TEAM */
