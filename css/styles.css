@@ -16,17 +16,9 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--brand-color-white);
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color-black);
-}
-
-.container {
-  width: 100%;
-  max-width: 1600px;
-  margin: auto;
-  background-color: var(--brand-color-white);
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -37,17 +29,20 @@ body {
   align-items: center;
 }
 
-.main {
-  padding: 0 215px;
+.footer {
+  padding: 60px 0px;
+  background-color: var(--brand-background-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
 .section {
-  padding: 94px 0;
-}
-
-.footer {
-  padding: 60px 0px 60px 215px;
-  background-color: var(--brand-background-dark);
+  margin-bottom: 94px;
 }
 
 .list {
@@ -127,18 +122,22 @@ body {
   color: var(--brand-color-blue);
 }
 
-/* SLOGAN */
+/* HERO */
 
-.slogan {
+.hero {
   background-color: var(--brand-background-dark);
-  padding: 200px 452px;
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slogan-content {
+.hero-content {
   text-align: center;
+  width: 700px;
 }
 
-.slogan-title {
+.hero-title {
   color: var(--brand-color-white);
   text-transform: uppercase;
   font-size: 44px;
@@ -148,7 +147,7 @@ body {
   margin-bottom: 30px;
 }
 
-.slogan-btn {
+.hero-btn {
   color: var(--brand-color-white);
   background-color: var(--brand-color-blue);
   border: none;
@@ -163,9 +162,9 @@ body {
   border-radius: 4px;
 }
 
-.slogan-btn:hover,
-.slogan-btn:focus,
-.slogan-btn:active {
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
   background-color: var(--brand-color-white);
   color: var(--brand-color-blue);
 }
@@ -218,6 +217,8 @@ body {
 .team {
   text-align: center;
   background-color: #f5f4fa;
+  padding: 94px 0;
+  margin-bottom: 0px;
 }
 
 .team-item {
@@ -256,7 +257,7 @@ body {
 .submenu-list {
   margin: auto;
   width: 580px;
-  padding-bottom: 50px;
+  padding: 94px 0 50px 0;
 }
 
 .submenu-list > ul {
