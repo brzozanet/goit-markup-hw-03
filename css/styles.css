@@ -23,10 +23,13 @@ body {
 
 .header {
   height: 80px;
-  border-bottom: #ececec solid 1px;
   padding: 0 215px;
   display: flex;
   align-items: center;
+}
+
+.header-line {
+  border-bottom: #ececec solid 1px;
 }
 
 .footer {
@@ -266,7 +269,7 @@ body {
 }
 
 .submenu-item {
-  display: inline-block;
+  list-style-type: none;
 }
 
 .btn {
@@ -301,12 +304,10 @@ body {
   column-gap: 20px;
 }
 
-.projects-item {
-  border: 1px solid #eee;
-  display: inline-block;
-}
-
 .projects-description {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 20px 24px;
 }
 
