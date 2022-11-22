@@ -21,9 +21,15 @@ body {
   color: var(--brand-color-black);
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
 .header {
-  height: 80px;
-  padding: 0 215px;
+  padding: 24px 0;
   display: flex;
   align-items: center;
 }
@@ -37,15 +43,8 @@ body {
   background-color: var(--brand-background-dark);
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -105,11 +104,11 @@ body {
 
 .contact-item {
   display: inline;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .contact-item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .contact-link {
@@ -175,7 +174,7 @@ body {
 /* ADVANTAGES */
 
 .advantages {
-  padding-bottom: 0px;
+  padding: 94px 0;
 }
 
 .advantages-item {
