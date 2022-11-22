@@ -31,11 +31,16 @@ body {
 .header {
   padding: 24px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header-line {
   border-bottom: #ececec solid 1px;
+}
+
+.navigation {
+  display: flex;
 }
 
 .footer {
@@ -75,12 +80,14 @@ body {
 /* NAVIGATION */
 
 .menu-list {
-  margin-right: 371px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-item {
-  display: inline;
   margin-right: 46px;
+  display: inline;
 }
 
 .menu-item:last-child {
@@ -89,6 +96,7 @@ body {
 
 .menu-link {
   text-decoration: none;
+
   font-size: 14px;
   font-weight: 500;
   color: var(--brand-color-black);
