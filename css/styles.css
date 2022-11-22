@@ -29,7 +29,8 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +45,8 @@ body {
 }
 
 .footer {
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--brand-background-dark);
 }
 
@@ -136,7 +138,8 @@ body {
 
 .hero {
   background-color: var(--brand-background-dark);
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +185,8 @@ body {
 /* ADVANTAGES */
 
 .advantages {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-item {
@@ -227,7 +231,8 @@ body {
 .team {
   text-align: center;
   background-color: #f5f4fa;
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-bottom: 0px;
 }
 
